@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\static\styles\normalize.css">
+    <link rel="stylesheet" href="\static\styles\base_logado.css">
+    {% block title %}
+    <title>
+        Protex
+    </title>
+    {% endblock %}
+
+    {% block styles %}
+        
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        <div class="apresentacao">
+            <img src="\static\icons\fabrica.png" alt="Logo de uma fabrica">
+            <h2>Gestão de Produção</h2>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

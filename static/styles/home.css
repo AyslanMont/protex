@@ -1,0 +1,30 @@
+main {
+    height: 90%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .setor {
+    background-color: aqua;
+    flex-basis: 31%;
+    height: 45%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .setor .imagem {
+    height: 65%;
+    background-image: url("/static/imgs/pano_dobrado.jpg");
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+main .setor .navegacao {
+    height: 35%;
+    border-radius:0 0 10px 10px;
+    background-color: blueviolet;
+}

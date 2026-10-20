@@ -1,0 +1,35 @@
+:root {
+    /* Paleta de Cores */
+    --azul_primario: #011B66;
+
+    /* Fontes */
+
+
+}
+
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    height: 10%;
+    background-color: var(--azul_primario);
+}
+
+header .apresentacao img {
+    max-height: 50px;
+}
+
+header .apresentacao {
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .apresentacao h2 {
+    color: #FFF;
+}
