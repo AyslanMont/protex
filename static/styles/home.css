@@ -17,14 +17,40 @@ main .setor {
 }
 
 main .setor .imagem {
-    height: 65%;
+    flex: 80;
     background-image: url("/static/imgs/pano_dobrado.jpg");
     background-size: cover;
     border-radius: 10px 10px 0 0;
 }
 
 main .setor .navegacao {
-    height: 35%;
+    flex: 20;
     border-radius:0 0 10px 10px;
-    background-color: blueviolet;
+    background-color: var(--azul_primario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 15%;
+    color: #fff;
+    padding: 0 10px 0 10px;
+    gap: 20px;
+}
+
+main .setor .navegacao .icone_setor {
+    height: 90px;
+
+}
+
+main .setor .navegacao .seta {
+    height: 35px;
+
+}
+
+main .setor .navegacao .conteudo *{
+margin: 5px;
+}
+
+main .setor .navegacao .seta:hover {
+    transform: scale(1.2);
+
 }
