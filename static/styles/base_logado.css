@@ -11,11 +11,13 @@
 body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     display: flex;
-    height: 10%;
+    flex: 10;
     background-color: var(--azul_primario);
 }
 
