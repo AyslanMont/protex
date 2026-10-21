@@ -15,6 +15,10 @@ main .setor {
     flex-direction: column;
 }
 
+main .setor:hover {
+    transform: scale(1.05);
+}
+
 main .setor .imagem {
     flex: 80;
     background-size: cover;

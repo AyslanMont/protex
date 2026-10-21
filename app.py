@@ -9,3 +9,7 @@ def home():
 @app.route("/dobrado")
 def dobrado():
     return render_template("dobrado.html")
+
+@app.route("/estampa")
+def estampa():
+    return render_template("estampa.html")
