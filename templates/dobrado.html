@@ -1,0 +1,48 @@
+{% extends "base_logado.html" %}
+
+{% block title %}
+ <title>
+    Setor de Dobrado
+ </title>
+{% endblock%}
+
+{% block styles %}
+      <link rel="stylesheet" href="static\styles\dobrado.css">  
+{% endblock %}
+
+{% block content %}
+<main>
+    <section class="navegacao">
+        <img src="\static\icons\seta_esquerda.png" alt="">
+        <p>Voltar para página a inicial</p>
+    </section>
+    <section class="apresentacao">
+        <img src="\static\icons\pano_prato_preto.png" alt="">
+        <div class="conteudo">
+            <h1>Dobrado</h1>
+            <p>Escolha uma opção para contiuar.</p>  
+        </div>
+    </section>
+    <section class="opcoes">
+        <div class="opcao">
+            <img src="\static\icons\fabrica_azul.png" alt="">
+            <h3>Produção</h3>
+            <p>Registre e acompanhe a produção de dúzias.</p>
+            <img src="\static\icons\seta_direita.png" alt="" class="seta">
+        </div>
+        <div class="opcao">
+            <img src="\static\icons\cifrao.png" alt="">
+            <h3>Pagamento</h3>
+            <p>Consulte e registre os pagamentos.</p>
+            <img src="\static\icons\seta_direita.png" alt="" class="seta">
+        </div>
+        <div class="opcao">
+            <img src="\static\icons\funcionarios.png" alt="">
+            <h3>Funcionários</h3>
+            <p>Veja a lista de funcionários do setor.</p>
+            <img src="\static\icons\seta_direita.png" alt="" class="seta">
+        </div>
+    </section>
+   
+</main>
+{% endblock %}
