@@ -1,0 +1,121 @@
+{% extends "base_logado.html" %} {% block title %}
+<title>Produção do setor Dobrado</title>
+{% endblock%} {% block styles %}
+<link rel="stylesheet" href="static\styles\dobrado_producao.css" />
+{% endblock %} {% block content %}
+<main>
+  <sectio class="apresentacao">
+    <img src="\static\icons\pano_prato_preto.png" alt="" />
+    <div>
+      <h2>Produção</h2>
+      <p>
+        Registre a produção geral do dia ou a produção individual de um
+        funcionário.
+      </p>
+    </div>
+  </sectio>
+  <section class="formularios">
+    <div class="formulario-geral">
+      <div class="cabecalho">
+        <img src="\static\icons\funcionarios.png" alt="" />
+        <div>
+          <h3>Lançamento da produção diária.</h3>
+          <p>
+            Lance a produção total do setor no dia. (Para todas as
+            turmas\funcionarios.)
+          </p>
+        </div>
+      </div>
+      <form action="">
+        <div class="valores">
+          <label for="">Data </label>
+          <input type="date" />
+        </div>
+        <div class="valores">
+          <label for="">Turma </label>
+          <select name="" id="">
+            <option value="">Turma 1</option>
+            <option value="">Turma 2</option>
+          </select>
+        </div>
+        <div class="valores">
+          <label for="">Produto</label>
+          <select name="" id="">
+            <option value="">45 x 75</option>
+            <option value="">44 x 70</option>
+          </select>
+        </div>
+        <div class="valores">
+          <label for="">Tipo da Embalagem</label>
+          <select name="" id="">
+            <option value="">Dúzias</option>
+            <option value="">Dezenas</option>
+          </select>
+        </div>
+
+        <div class="valores">
+          <label> Qtd.</label>
+          <input type="number" />
+        </div>
+
+        <button type="submit" class="botao">Lançar</button>
+      </form>
+    </div>
+
+
+    <div class="formulario-geral">
+      <div class="cabecalho">
+        <img src="\static\icons\funcionario.png" alt="" />
+        <div>
+          <h3>Lançamento de produção individual.</h3>
+          <p>
+            Lance a produção de um funcionário específico.
+          </p>
+        </div>
+      </div>
+      <form action="">
+        <div class="valores-individual">
+          <label for="">Data </label>
+          <input type="date" />
+        </div>
+        <div class="valores-individual">
+          <label for="">Turma </label>
+          <select name="" id="">
+            <option value="">Turma 1</option>
+            <option value="">Turma 2</option>
+          </select>
+        </div>
+        <div class="valores-individual">
+          <label for="">Funcionário</label>
+          <select name="" id="">
+            <option value="">Isabel</option>
+            <option value="">Elias</option>
+          </select>
+        </div>
+        <div class="valores-individual">
+          <label for="">Produto</label>
+          <select name="" id="">
+            <option value="">45 x 75</option>
+            <option value="">44 x 70</option>
+          </select>
+        </div>
+        <div class="valores-individual">
+          <label for="">Tipo da Embalagem</label>
+          <select name="" id="">
+            <option value="">Dúzias</option>
+            <option value="">Dezenas</option>
+          </select>
+        </div>
+
+        <div class="valores-individual">
+          <label> Qtd.</label>
+          <input type="number" />
+        </div>
+
+        <button type="submit" class="botao">Lançar</button>
+      </form>
+    </div>
+  </section>
+  <section class="lista"></section>
+</main>
+{% endblock %}
