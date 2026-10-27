@@ -15,10 +15,11 @@ body {
     flex-direction: column;
 }
 
-header {
+header.base {
     display: flex;
     flex: 10;
     background-color: var(--azul_primario);
+    padding: 0 25px;
 }
 
 header .apresentacao img {
@@ -28,8 +29,8 @@ header .apresentacao img {
 header .apresentacao {
     display: flex;
     width: 25%;
-    justify-content: space-around;
     align-items: center;
+    gap: 15px;
 }
 
 header .apresentacao h2 {

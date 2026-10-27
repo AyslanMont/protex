@@ -7,7 +7,7 @@
   <sectio class="apresentacao">
     <img src="\static\icons\pano_prato_preto.png" alt="" />
     <div>
-      <h2>Produção</h2>
+      <h2>Produção do setor de Dobrado</h2>
       <p>
         Registre a produção geral do dia ou a produção individual de um
         funcionário.
@@ -55,22 +55,19 @@
 
         <div class="valores">
           <label> Qtd.</label>
-          <input type="number" />
+          <input type="number" placeholder="Ex.: 500" />
         </div>
 
         <button type="submit" class="botao">Lançar</button>
       </form>
     </div>
 
-
     <div class="formulario-geral">
       <div class="cabecalho">
         <img src="\static\icons\funcionario.png" alt="" />
         <div>
           <h3>Lançamento de produção individual.</h3>
-          <p>
-            Lance a produção de um funcionário específico.
-          </p>
+          <p>Lance a produção de um funcionário específico.</p>
         </div>
       </div>
       <form action="">
@@ -109,13 +106,42 @@
 
         <div class="valores-individual">
           <label> Qtd.</label>
-          <input type="number" />
+          <input type="number" placeholder="Ex.: 500" />
         </div>
 
         <button type="submit" class="botao">Lançar</button>
       </form>
     </div>
   </section>
-  <section class="lista"></section>
+<section class="lista">
+  <div class="conteudo">
+    <div class="cabecalho">
+      <p>Data</p>
+      <p>Geral / Individual</p>
+      <p>Turma</p>
+      <p>Produto</p>
+      <p>Embalagem</p>
+      <p>Quantidade</p>
+    </div>
+
+    <div class="linha">
+      <p>27/10/2026</p>
+      <p>Geral</p>
+      <p>Turma 1</p>
+      <p>45 x 75</p>
+      <p>Dúzias</p>
+      <p>500</p>
+    </div>
+
+    <div class="linha">
+      <p>27/10/2026</p>
+      <p>Individual</p>
+      <p>Turma 2</p>
+      <p>44 x 70</p>
+      <p>Dezenas</p>
+      <p>250</p>
+    </div>
+  </div>
+</section>
 </main>
 {% endblock %}

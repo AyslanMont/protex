@@ -18,3 +18,7 @@ def dobrado_producao():
 @app.route("/estampa")
 def estampa():
     return render_template("estampa.html")
+
+@app.route("/estampa-producao")
+def estampa_producao():
+    return render_template("estampa_producao.html")
